@@ -24,7 +24,7 @@ jobs:
       # running the script
       - name: execute py script
         run: |
-          python ./.github/workflows/medium.py
+          python ./.github/workflows/mediumBlogsFetch.py
       # pushing the update code
       - name: switching from HTTPS to SSH
         run: |
