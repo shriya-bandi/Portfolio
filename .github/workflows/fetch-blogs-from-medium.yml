@@ -1,8 +1,8 @@
 name: fetch-blogs-from-medium
 run-name: Scrapping Pranshu's Medium blog
-on: [push]
-#  schedule:
-#    - cron: "10 7 * * *" # run script after everyday
+on:
+  schedule:
+    - cron: "0 1 * * *" # run script at 6.30 am IST
 permissions:
   contents: write
 jobs:
