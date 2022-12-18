@@ -25,7 +25,7 @@ jobs:
           python -m pip install 'bs4'
       - name: execute py script # run the run.py to get the latest data
         run: |
-          python ./.github/workflows/medium.py
+          python ./.github/workflows/mediumBlogsFetch.py
 
       - shell: pwsh
         # Give an id to the step, so we can reference it later
