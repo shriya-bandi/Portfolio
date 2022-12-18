@@ -59,7 +59,7 @@ jobs:
           python -m pip install 'bs4'
       - name: execute py script # run the run.py to get the latest data
         run: |
-          python ./.github/workflows/medium.py
+          python ./.github/workflows/mediumBlogsFetch.py
       - name: switching from HTTPS to SSH
         run: |
           git config --local user.email "action@github.com"
@@ -69,7 +69,7 @@ jobs:
       - name: stage changed files
         run: git add .
       - name: commit changed files
-        run: git commit -m "Auto updating blog.json"
+        run: git commit -m "🌍 Update JSON- srap blogs from medium"
       - name: fetch from master
         run: git fetch origin master
       - name: Push changes
